@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+        app:navigationIconTint="@color/green"
+        app:title="Add A new Product"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/product_name"
+        android:backgroundTint="@color/green"
+        android:layout_below="@+id/toolbar"
+        android:layout_margin="20dp"
+        android:id="@+id/nameInput"
+        android:inputType="text"
+        android:autofillHints="Sukuma,Maize,Apples,Cabbage,Oranges" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/quantity"
+        android:layout_below="@+id/nameInput"
+        android:backgroundTint="@color/green"
+        android:layout_margin="20dp"
+        android:id="@+id/qttyInput"
+        android:inputType="number"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/select_unit"
+        android:backgroundTint="@color/green"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/qttyInput"
+        android:id="@+id/unitsInput"
+        android:inputType="text"
+        android:focusable="false" />
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/unitsInput"
+        android:backgroundTint="@color/green"
+        android:textColor="@color/white"
+        android:text="@string/save"
+        app:cornerRadius="20dp"
+        android:id="@+id/save"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"/>
+
+
+
+
+
+</RelativeLayout>
